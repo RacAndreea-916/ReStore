@@ -4,7 +4,7 @@ import agent from "../../app/api/agent";
 import { RootState } from "../../app/store/configureStore";
 import { MetaData } from "../../app/models/pagination";
 
-interface CatalogState{
+export interface CatalogState{
     productsLoaded: boolean;
     filtersLoaded: boolean;
     status: string;
@@ -58,7 +58,7 @@ export const fetchProductAsync = createAsyncThunk<Product, number, {state:RootSt
     }
 )
 
-export const fetchFilters = createAsyncThunk(
+export const fetchFilters = createAsyncThunk<any, any, {state:RootState}>(
     'catalog/fetchFilters',
     async (_, thunkAPI) =>{
         try {
