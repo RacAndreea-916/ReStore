@@ -48,15 +48,6 @@ This repository contains a complete, full-stack E-Commerce web application built
 - `API/`: Contains the backend code for the .NET Web API.
 - `client/`: Contains the frontend code for the React application.
 
-## Learning Goals
-
-- Develop a full-stack application using .NET 7 and React 18.
-- Manage client-side state with Redux and use Material UI to create a professional UI.
-- Work with ASP.NET Identity for user authentication and authorization.
-- Implement secure payments using Stripe.
-- Build and use reusable form components with React Hook Form.
-- Add advanced features like paging, sorting, and filtering to the product catalog.
-
 ## Known Issues & Roadmap
 
 - The app currently supports local development only. Deployment instructions will be added later.
